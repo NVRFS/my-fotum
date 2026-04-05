@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{block title}
+{if title %}
+   <title>{{ title }}</title>
+{else}
+    <title>My Forum</title>
+{% endblock %}
+{% block content %} 
+    <h1>Welcome to My Forum</h1>
+    <p>This is the homepage of the forum. Here you can find various topics and discussions.</p>
+{% endblock %}

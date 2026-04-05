@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Add Feed</title>
+{% endblock %}
+{% block content %}
+    <h1>Add Feed</h1>
+    <form method="POST" action="{{ url_for('add_feed') }}">
+        <div>
+            <label for="feed_url">Feed URL:</label>
+            <input type="text" id="feed_url" name="feed_url" required>
+        </div>
+        <button type="submit">Add Feed</button>
+    </form>
+{% endblock %}
