@@ -26,8 +26,8 @@ def register():
     print(url_for('register'))
     return render_template('register.html', title='Register')
 
-@app.route('/Profile/<username>/<path:post_id>')
-def profile(username, post_id):
+@app.route('/Profile/<string:username>/<int:id>')
+def profile(username, id):
     if "user_logged" not in session or session['user_logged'] != username:
         abort (401)
     print(url_for('profile', username=username))
