@@ -39,7 +39,7 @@ def add_feed():
     if "user_logged" not in session:
         abort (401)
     print(url_for('add_feed'))
-    return render_template('add_feed.html', title='Add feed')
+    return render_template('Add_feed.html', title='Add feed')
     
 
 @app.route('/Feed/<path:post_id>')

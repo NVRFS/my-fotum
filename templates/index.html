@@ -1,9 +1,10 @@
 {% extends "base.html" %}
-{block title}
-{if title %}
+{% block title %}
+{% if title %}
    <title>{{ title }}</title>
-{else}
+{% else %}
     <title>My Forum</title>
+{% endif %}
 {% endblock %}
 {% block content %} 
     <h1>Welcome to My Forum</h1>
